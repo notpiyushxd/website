@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ffe4ec, #c4f0f0);
+  color: #333;
+  line-height: 1.6;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #7c4dff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff4081;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #7c4dff;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e91e63;
+  cursor: pointer;
+}
+
+#flavorDisplay {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.gallery {
+  padding: 2rem;
+  text-align: center;
+}
+
+.image-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.image-grid img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.about {
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.flavor-list {
+  margin: 2rem auto;
+  max-width: 600px;
+  background: #fff8fb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255,64,129,0.08);
+  padding: 1.5rem;
+}
+.flavor-list h2 {
+  color: #ff4081;
+  margin-bottom: 1rem;
+}
+.flavor-list ul {
+  list-style: none;
+  padding: 0;
+}
+.flavor-list li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.fun-facts, .quote-rotator {
+  margin: 2rem auto;
+  max-width: 500px;
+  background: #e3f2fd;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(124,77,255,0.08);
+}
+.fun-facts h2, .quote-rotator h2 {
+  color: #7c4dff;
+  margin-bottom: 0.7rem;
+}
+#factDisplay, #quoteDisplay {
+  font-size: 1.1rem;
+  color: #333;
+  min-height: 1.5em;
+  transition: opacity 0.5s;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: auto;
+  }
+}
